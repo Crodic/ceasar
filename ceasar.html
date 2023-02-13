@@ -74,7 +74,7 @@
             let key = document.querySelector('input[type=text]')
             let lowerCase = plainText.value.toLowerCase()
             for (const text of lowerCase) {
-                if(!ASCII.includes(text) || isNaN(text)){
+                if(!ASCII.includes(text)){
                     newText+=text
                     continue
                 }
@@ -98,7 +98,7 @@
             let lowerCase = cipher.value.toLowerCase()
 
             for (const text of lowerCase) {
-                if(!ASCII.includes(text) || isNaN(text)){
+                if(!ASCII.includes(text)){
                     newText += text
                     continue
                 }
